@@ -1,0 +1,14 @@
+{
+  "name": "@tpot/spawn-promise",
+  "version": "1.0.0",
+  "description": "Better Promise-based interface to node:child_process spawn()",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Tim Potter <tpot@frungy.org>",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "mocha": "^10.4.0"
+  }
+}
