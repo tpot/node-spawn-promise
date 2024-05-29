@@ -15,8 +15,8 @@ const { spawnPromise } = require('@tpot/spawn-promise')
 const child = await spawnPromise("/bin/ls", [ "-l", "/tmp" ])
 
 // Log stdout and stderr
-child.stdout.on('data', (chunk) => console.log(chunk))
-child.stderr.on('data', (chunk) => console.error(chunk))
+child.stdout.on('data', (chunk) => console.log(chunk.toString()))
+child.stderr.on('data', (chunk) => console.error(chunk.toString()))
 
 // Await exit of child process
 await child.exitPromise
